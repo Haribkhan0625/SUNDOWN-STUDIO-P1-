@@ -227,9 +227,11 @@ nav{
 }
 @keyframes gooey{
     from{
+        filter: blur(20px);
         transform: translate(10%,-10%) skew(0);
     }
     to{
+        filter: blur(30px);
         transform: translate(-10%,10%) skew(-12deg);
     }
 }
@@ -239,5 +241,36 @@ nav{
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    /* position: relative; */
+    padding: 4vw 0;
+
+}
+.elem{
+    height: 120px;
+    width: 100%;
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid rgb(120, 119, 119);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw ;
+    overflow: hidden;
+    cursor: pointer;
+}
+.elem h2{
+    font-size: 3rem;
+    position: relative;
+    z-index: 9;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+.elem:hover .overlay{
+    top: 0;
+    
 }
