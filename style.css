@@ -13,12 +13,16 @@ body {
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    cursor: url("https://img.icons8.com/?size=30&id=10284&format=png&color=FE4D14"),auto;
+    
 }
-#main{
+
+#main {
     /* background-color: #000; */
     position: relative;
     z-index: 10;
 }
+
 #page1 {
     min-height: 100vh;
     width: 100%;
@@ -60,6 +64,7 @@ nav {
     color: #000000ac;
     z-index: 9;
     position: relative;
+    /* cursor: url("https://img.icons8.com/?size=100&id=JbzGrQKaIwr4&format=png&color=000000"),pointer; */
 }
 
 #nav-part2 h4 a:hover {
@@ -332,16 +337,43 @@ nav {
     background-position: center;
     transition: all linear 0.2s;
 }
-#page4{
-    height: 60vh;
+
+#page4 {
+    height: 70vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 10vw 2vw;
 }
-#page5{
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 30%;
+    border-left: 1px solid #9c9c9cbd;
+    padding: 0 1.1vw;
+}
+.swiper-slide p{
+    font-size: 1.2rem;
+    padding: 2vw 0;
+}
+
+#north-face{
+    width: 150px;
+    height: 150px;
+}
+#north-face-p{
+    padding: 0;
+}
+
+#page5 {
     height: 100vh;
-    width: 100%;   
+    width: 100%;
 }
-#footer{
+
+#footer {
     position: fixed;
     height: 90vh;
     bottom: 0;
@@ -355,10 +387,12 @@ nav {
     flex-direction: column;
     padding: 1vw 3vw;
 }
-#footer h1{
+
+#footer h1 {
     font-size: 20vw;
 }
-#footer-div{
+
+#footer-div {
     height: 20vh;
     width: 100%;
     /* background-color: red; */
@@ -366,7 +400,8 @@ nav {
     align-items: flex-start;
     justify-content: space-between;
 }
-#footer-div #left{
+
+#footer-div #left {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -375,13 +410,16 @@ nav {
     line-height: 2vw;
     color: #fff;
 }
-#footer-div #right{
+
+#footer-div #right {
     color: #fff;
 }
-#footer-div #right h4{
+
+#footer-div #right h4 {
     /* display: inline-block; */
     font-size: 1vw;
 }
+
 #footer-div #right input {
     height: 3vw;
     outline: none;
@@ -395,7 +433,7 @@ nav {
     border-bottom: 1px solid rgb(120, 120, 120);
 }
 
-#footer-bottom{
+#footer-bottom {
     color: #fff;
     border-top: 1px solid #dadada;
     height: 10vh;
